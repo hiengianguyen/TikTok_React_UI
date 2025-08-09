@@ -1,4 +1,4 @@
-import { DefaultLayout } from './layouts';
+import { DefaultLayout } from './components/layouts';
 import { publicRoutes } from './router';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
