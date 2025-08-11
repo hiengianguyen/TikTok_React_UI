@@ -7,6 +7,7 @@ import classNames from 'classnames/bind';
 import images from '../../../../assets/images';
 import { Wrapper as PopperWrapper } from '../../../Popper';
 import SearchAccountItems from '../../../SearchAccountItems';
+import Button from '../../../Button';
 
 const cx = classNames.bind(style);
 
@@ -45,7 +46,7 @@ function Header() {
                             <FontAwesomeIcon icon={faCircleXmark} className="close-icon" />
                         </button>
 
-                        <FontAwesomeIcon icon={faSpinner} className="loading-icon" />
+                        <FontAwesomeIcon icon={faSpinner} className={cx('loading-icon')} />
 
                         <div className={cx('dash-height')}></div>
 
@@ -55,7 +56,14 @@ function Header() {
                     </div>
                 </Tippy>
 
-                <div className={cx('actions')}></div>
+                <div className={cx('actions')}>
+                    <Button onClick={() => alert('say hiii')} text>
+                        Upload
+                    </Button>
+                    <Button onClick={() => alert('say hiii')} primary>
+                        Login
+                    </Button>
+                </div>
             </div>
         </div>
     );
