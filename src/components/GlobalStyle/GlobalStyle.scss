@@ -6,6 +6,7 @@
     --defaultlayout-header-width: 1150px;
     --white: #fff;
     --primary: #e01d44;
+    --black: #000;
 }
 
 * {
@@ -31,4 +32,9 @@ input,
 [tabIndex] {
     outline: none;
     border: none;
+}
+
+a[href] {
+    text-decoration: none;
+    color: var(--black);
 }
